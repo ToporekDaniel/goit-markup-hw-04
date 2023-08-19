@@ -90,11 +90,48 @@ footer {
 }
 
 .footer-block {
+  display: flex;
   width: 1158px;
 }
 
 .footer-text {
   width: 264px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-media p {
+  font-weight: 500;
+  color: var(--white, #fff);
+}
+
+.social-media ul {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media ul li {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris, #4d5ae5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media ul li a {
+  width: 24px;
+  height: 24px;
+}
+
+.studio-media-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .logo-header {
@@ -206,6 +243,7 @@ footer {
 
 .heroimage {
   height: 600px;
+  width: 1440px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -213,7 +251,17 @@ footer {
   flex-direction: column;
   gap: 48px;
 
-  background: var(--navyblue, #2e2f42);
+  background: var(--grey, rgba(46, 47, 66, 0.7));
+  background-image: linear-gradient(
+      90deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url("../images/index-page/people-office.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 .hero-title {
   color: var(--white, #fff);
@@ -273,6 +321,18 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.feature .feature-icon-box {
+  padding: 24px 100px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+}
+
+.feature .feature-icon-box svg {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
 }
 
 .our-work {
