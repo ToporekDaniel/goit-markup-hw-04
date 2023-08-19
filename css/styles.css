@@ -451,6 +451,10 @@ footer {
   border: 1px solid var(--ocean, #404bbf);
 }
 
+.customer-link:hover .customer-icon {
+  fill: var(--ocean, #404bbf);
+}
+
 .customer-link {
   width: 168px;
   height: 88px;
